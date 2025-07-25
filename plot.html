@@ -40,7 +40,8 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             padding: 10px;
         }
-        /* === NAVIGATION MENU STYLES START === */
+        
+        /* === NAVIGATION MENU STYLES === */
         nav {
             margin-bottom: 2em;
             padding-bottom: 1em;
@@ -58,19 +59,19 @@
         nav a:hover {
             border-bottom: 2px solid #00A99D; /* Accent Teal on hover */
         }
-        /* === NAVIGATION MENU STYLES END === */
     </style>
 </head>
 <body>
     <main>
-        <h1>Attendance vs. Academic Performance</h1>
-        <p>Each dot is a learner. Hover to see details. Color indicates a learning barrier flag.</p>
-        <div id="canvas-container"></div>
         <nav>
             <a href="index.html">At-Risk Map</a>
             <a href="trends.html">Academic Trendlines</a>
             <a href="plot.html">Attendance Plot</a>
         </nav>
+        
+        <h1>Attendance vs. Academic Performance</h1>
+        <p>Each dot is a learner. Hover to see details. Color indicates a learning barrier flag.</p>
+        <div id="canvas-container"></div>
     </main>
     <script src="plot.js"></script>
 </body>
