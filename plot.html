@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data With Heart | Attendance vs. Performance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F8F9FA;
+            color: #343A40;
+            margin: 0;
+            padding: 2em;
+            display: flex;
+            justify-content: center;
+        }
+        main {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #003865;
+            font-weight: 700;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.1em;
+            color: #6c757d;
+            margin-top: 0;
+            margin-bottom: 2em;
+        }
+        #canvas-container {
+            display: inline-block;
+            background-color: #FFFFFF;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Attendance vs. Academic Performance</h1>
+        <p>Each dot is a learner. Hover to see details. Color indicates a learning barrier flag.</p>
+        <div id="canvas-container"></div>
+    </main>
+    <script src="plot.js"></script>
+</body>
+</html>

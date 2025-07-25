@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data With Heart | At-Risk Learner Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F8F9FA;
+            color: #343A40;
+            margin: 0;
+            padding: 2em;
+            display: flex;
+            justify-content: center;
+        }
+        main {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #003865;
+            font-weight: 700;
+            margin-bottom: 0.5em;
+        }
+        p.subtitle {
+            font-size: 1.1em;
+            color: #6c757d;
+            margin-top: 0;
+            margin-bottom: 1em; /* Reduced margin */
+        }
+        
+        /* --- NEW LEGEND STYLES START HERE --- */
+        .legend {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2em 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap; /* Allows legend to wrap on smaller screens */
+        }
+        .legend li {
+            display: flex;
+            align-items: center;
+            font-size: 0.9em;
+        }
+        .legend-swatch {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%; /* Make it a circle */
+            margin-right: 8px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        /* --- NEW LEGEND STYLES END HERE --- */
+
+        #canvas-container {
+            display: inline-block;
+            background-color: #FFFFFF;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>At-Risk Learner Overview</h1>
+        <p class="subtitle">Each bubble represents a learner. Size indicates risk level; color highlights the primary concern.</p>
+        
+        <ul class="legend">
+            <li><span class="legend-swatch" style="background-color: #C14444;"></span>Academic Concern</li>
+            <li><span class="legend-swatch" style="background-color: #E97451;"></span>Attendance Concern</li>
+            <li><span class="legend-swatch" style="background-color: #00A99D;"></span>Learning Support</li>
+            <li><span class="legend-swatch" style="background-color: #003865;"></span>On Track</li>
+        </ul>
+        <div id="canvas-container"></div>
+    </main>
+    <script src="sketch.js"></script>
+</body>
+</html>
